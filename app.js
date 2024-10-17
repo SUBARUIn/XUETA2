@@ -20,14 +20,20 @@ const containerMain = document.querySelector('.container')
 const headerMain = document.querySelector('.header')
 const textMain = document.querySelector('.text')
 const buttonMain = document.querySelector('.btn')
+const buttonStart = document.querySelector('.btnStart')
 
 let score = 0
 let questionIndex = 0
 let finishResult = ''
 
+buttonStart.onclick = startTest
+
+function startTest() {
 clearPage()
 questionPage()
+buttonMain.classList.remove('.btnStart')
 buttonMain.onclick = questionNext
+}
 
 function clearPage() {
     headerMain.innerHTML = ''
