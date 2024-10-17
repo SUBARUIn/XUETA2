@@ -32,6 +32,7 @@ function startTest() {
 clearPage()
 questionPage()
 buttonMain.classList.remove('.btnStart')
+buttonMain.innerText = 'Ответить'
 buttonMain.onclick = questionNext
 }
 
